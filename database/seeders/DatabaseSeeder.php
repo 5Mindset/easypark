@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             VehicleTypeSeeder::class,
             VehicleBrandSeeder::class,
+            VehicleModelSeeder::class,
         ]);
         
     }
