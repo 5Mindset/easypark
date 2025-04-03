@@ -2,13 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Role;
+use App\Models\VehicleType;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Role>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\VehicleType>
  */
-class RoleFactory extends Factory
+class VehicleTypeFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -18,7 +18,7 @@ class RoleFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => $this->faker->unique()->randomElement(['admin', 'petugas', 'mahasiswa']), 
+            'name' => $this->faker->randomElement(['Motor', 'Mobil']),
         ];
     }
 }

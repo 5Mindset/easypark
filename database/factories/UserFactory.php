@@ -31,11 +31,11 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => static::$password ??= Hash::make('password'),
             'remember_token' => Str::random(10),
-            'role_id' => Role::inRandomOrder()->first()->id, // Menetapkan role_id secara acak
-            'phone' => fake()->phoneNumber(), // Menetapkan nomor telepon
-            'address' => fake()->address(), // Menetapkan alamat
-            'date_of_birth' => fake()->date(), // Menetapkan tanggal lahir
-            'profile_picture' => fake()->imageUrl(400, 400, 'people'), // Menetapkan URL gambar profil
+            'role_id' => Role::inRandomOrder()->first()->id,
+            'phone' => fake()->phoneNumber(), 
+            'address' => fake()->address(), 
+            'date_of_birth' => fake()->date(), 
+            'profile_picture' => fake()->imageUrl(400, 400, 'people'), 
         ];
     }
 

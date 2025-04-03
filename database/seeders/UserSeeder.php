@@ -39,7 +39,7 @@ class UserSeeder extends Seeder
         ]);
 
         // User::factory()->count(10)->create()->each(function ($user) {
-        //     $user->role_id = Role::inRandomOrder()->first()->id; // Menetapkan role_id acak untuk setiap penggun
+        //     $user->role_id = Role::inRandomOrder()->first()->id; 
         //     $user->save();
         // });
     }
