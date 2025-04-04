@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
             VehicleModelSeeder::class,
             VehicleSeeder::class,
             QrCodeSeeder::class,
+            ParkingRecordSeeder::class,
         ]);
         
     }
